@@ -1,105 +1,69 @@
-🚀 SEEKIE – AI-Powered Job Portal & Career Assistant
+SEEKIE – AI-Powered Job Portal
 
-SEEKIE is a full-stack job portal designed to help users find jobs, improve skills, and practice AI-driven mock interviews.
-The platform integrates multiple modules into one seamless experience, each maintained in its own repository.
+SEEKIE is a full-stack job portal that integrates AI-driven mock interviews and a personalized career coach, helping users enhance their skills, prepare for interviews, and explore job opportunities efficiently.
 
-📑 Table of Contents
+🚀 Key Features
 
-Overview
+Job Portal Functionality: Browse, search, and apply for jobs. User authentication using Clerk. Responsive and interactive UI with React.
 
-Modules
+AI Interviewer Module: Simulates real interview scenarios using AI. Provides instant feedback on answers. Tracks user performance and generates personalized question sets. AI Interviewer Repo
 
-Tech Stack
+Career Coach Module: Offers resume tips, career guidance, and interview preparation strategies. Uses AI to provide personalized advice. Career Coach Repo
 
-Getting Started
-
-Contributing
-
-
-🔎 Overview
-
-SEEKIE provides a complete career development ecosystem:
-
-Browse and apply to jobs
-
-Receive personalized career coaching
-
-Practice AI-powered mock interviews
-
-Track your progress and history
-
-All modules are connected to provide a unified user experience.
-
-🧩 Modules
-Module	Description	Repository
-Job Portal	Main job portal functionality: browse jobs, apply, track applications	Main SEEKIE Repo
-
-Career Coach	Personalized career guidance and skill recommendations	Career Coach Repo
-
-AI Interviewer	AI-driven mock interviews with real-time feedback	AI Interviewer Repo
-
-💡 Users can navigate seamlessly between these modules within the SEEKIE platform.
-
-✨ Features
-
-🔍 Job search and application tracking
-
-💡 Career coaching with personalized guidance
-
-🤖 AI-powered mock interviews
-
-⚡ Real-time feedback
-
-📊 Persistent data storage (Neon DB / Drizzle ORM)
-
-🔐 Secure authentication (Clerk)
-
-🎨 Responsive, modern UI (React + Next.js + Tailwind + Shadcn UI)
+Interactive Features: Dynamic dashboards and progress tracking. Clean and modern UI with Tailwind CSS.
 
 🛠 Tech Stack
 
-Frontend: React, Next.js, Tailwind CSS, Shadcn UI
+Frontend: Next.js, React, Tailwind CSS
 
-Backend: Next.js API routes, Prisma / Drizzle ORM
-
-Database: Neon DB (Postgres)
+Backend / Database: Neon DB, Prisma, Drizzle ORM
 
 Authentication: Clerk
 
-AI: Google Gemini AI
+AI Integration: Gemini AI for question generation and analysis
 
-Deployment: Vercel
+Task Scheduling / Workflows: Inngest
 
-🚀 Getting Started
+UI Components: Shadcn UI
 
-Clone the main SEEKIE repository
+💻 Getting Started
+Installation
 
-git clone https://github.com/Pradnyasharmaa/SEEKIE.git
-cd SEEKIE
+Clone the repository:
+git clone https://github.com/Pradnyasharmaa/SEEKIE-.git
+
+cd SEEKIE-
+
+Install dependencies:
 npm install
 
+Create a .env file with the following keys:
+DATABASE_URL=
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/onboarding
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/onboarding
+GEMINI_API_KEY=
 
-Install and run the sub-modules if needed
-
-Career Coach: https://github.com/Pradnyasharmaa/career-coach
-
-AI Interviewer: https://github.com/Pradnyasharmaa/AI-INTERVIEW-
-
-Create .env files for each module (as described in their respective repos)
-
-Run the main app
-
+Run the development server:
 npm run dev
 
+Open http://localhost:3000
+ to view the app.
 
-Access at http://localhost:3000
+📸  Demo Video
+https://drive.google.com/drive/folders/1M91Ga1Dmp-tEDlgSQamAchuHt_YRQGik?usp=drive_link
 
-🤝 Contributing
+⚠ Known Issues
 
-Contributions are welcome!
+Minor UI bugs may appear on small screens (responsive fixes in progress).
 
-Fork each module repo as needed
+AI Interviewer requires a stable internet connection for question generation.
 
-Create feature branches
+📝 Notes
 
-Submit pull requests
+This project was developed as a full-stack MVP for demonstrating modern web development and AI integration skills.
+
+The project is modular; AI Interviewer and Career Coach are maintained in separate repositories but integrate seamlessly with SEEKIE.
